@@ -269,15 +269,19 @@ h1, h2, h3, h4{
     object-fit: cover;
 }
 
-.project-name, .page, .tecnologies {
+.project-name, .page, .description {
     display: flex;
     flex-wrap: wrap;
-    height: 50px;
+    height: 55px;
     width: 100%;
     align-items: center;
     justify-content: center;
     gap: 10%;
-    text-align: center;
+}
+
+.description p {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .projects span {
@@ -287,7 +291,6 @@ h1, h2, h3, h4{
 .project-name {
     font-size: 20px;
     color: rgb(240, 240, 240);
-    text-align: center;
 }
 
 .page a {
