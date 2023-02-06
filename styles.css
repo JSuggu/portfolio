@@ -259,6 +259,8 @@ h1, h2, h3, h4{
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     border: 2px solid rgb(100, 100, 100);
     border-radius: 5px;
 }
@@ -272,11 +274,25 @@ h1, h2, h3, h4{
 .project-name, .page, .description {
     display: flex;
     flex-wrap: wrap;
-    height: 55px;
+    height: 60px;
     width: 100%;
     align-items: center;
     justify-content: center;
-    gap: 10%;
+    gap: 5%;
+}
+
+.project-name {
+    font-size: 20px;
+    color: rgb(240, 240, 240);
+    text-align: center;
+}
+
+.projects span {
+    font-size: 16px;
+}
+
+.description {
+    overflow: auto;
 }
 
 .description p {
@@ -284,13 +300,8 @@ h1, h2, h3, h4{
     padding-right: 10px;
 }
 
-.projects span {
-    font-size: 16px;
-}
-
-.project-name {
-    font-size: 20px;
-    color: rgb(240, 240, 240);
+.page {
+    padding-bottom: 5px;
 }
 
 .page a {
@@ -515,6 +526,19 @@ span.light-mode, p.light-mode, a.light-mode, .project-name.light-mode {
 
     }
 
+    .project-name {
+        height: 50px;
+    }
+
+    .description {
+        overflow: auto;
+    }
+
+    .page {
+        height: 60px;
+        padding-bottom: 5px;
+    }
+
     /*** SKILLS ***/
     .languages, .frameworks, .tools {
         border: unset;
@@ -524,6 +548,10 @@ span.light-mode, p.light-mode, a.light-mode, .project-name.light-mode {
         min-width: 300px;
         max-width: 100%;
         margin-bottom: 70px;
+    }
+
+    .soft-skills {
+        padding-left: 10px;
     }
 
     .skills {
