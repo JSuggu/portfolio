@@ -349,7 +349,7 @@ h1, h2, h3, h4{
     width: 70%;
     justify-content: center;
     grid-template-columns: repeat(3, minmax(200px, 30%));
-    grid-template-rows: 200px;
+    grid-template-rows: 220px;
     column-gap: 20px;
     align-self: center;
     border: 1px solid rgb(100, 100, 100);
