@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 /***** GENERAL *****/
@@ -192,7 +193,7 @@ h1, h2, h3, h4{
     transform: scale(1.2,1.2);
 }
 
-.form-container {
+.email-container {
     display: none;
     position: fixed;
     top: 0;
@@ -203,36 +204,22 @@ h1, h2, h3, h4{
     align-items: center;
 }
 
-.form {
+.email-address {
     display: flex;
     width: 300px;
     flex-direction: column;
     background-color: rgb(230, 145, 30);
     border-radius: 5px;
-    padding-left: 50px;
-    padding-top: 5px;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(15, 15, 15);
+    align-self: center;
 }
 
-.form input, .form textarea {
-    width: 250px;
-    height: 30px;
-    resize: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.form textarea {
-    height: 120px;
-}
-
-#send-form:hover {
-    cursor: pointer;
-    background-color: rgb(200, 200, 200);
-}
-
-.close-form {
+.close-email {
     font-size: 20px;
-    margin-bottom: 335px;
+    margin-bottom: 75px;
     color: rgb(245, 245, 245);
     cursor: pointer;
 }
@@ -332,15 +319,13 @@ h1, h2, h3, h4{
     margin-bottom: 150px;
 }
 
-.soft-skills {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-    gap: 10px;
-}
-
-.soft-skills span {
+.other-skills {
+    min-width: 600px;
+    width: 80%;
+    align-self: center;
     font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
 }
 
 .skills {
@@ -534,8 +519,10 @@ span.light-mode, p.light-mode, a.light-mode, .project-name.light-mode {
     }
 
     .page {
-        height: 60px;
+        height: 65px;
         padding-bottom: 5px;
+        padding-top: 5px;
+        gap: 5px;
     }
 
     /*** SKILLS ***/
@@ -549,8 +536,9 @@ span.light-mode, p.light-mode, a.light-mode, .project-name.light-mode {
         margin-bottom: 70px;
     }
 
-    .soft-skills {
-        padding-left: 10px;
+    .other-skills {
+        min-width: 240px;
+        width: 70%;
     }
 
     .skills {
@@ -559,7 +547,7 @@ span.light-mode, p.light-mode, a.light-mode, .project-name.light-mode {
         column-gap: 5px;
         border: unset;
         grid-template-columns: 100%;
-        grid-template-rows: repeat(3, 200px);
+        grid-template-rows: repeat(3, auto);
         border: 1px solid rgb(100, 100, 100);
     }
 

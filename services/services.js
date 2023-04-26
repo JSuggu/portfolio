@@ -65,14 +65,19 @@ export const services = {
 
     sendEmail: function() {
         const emailButton = document.querySelector("#email");
-        const formElem = document.querySelector(".form-container");
+        const emailContainerElem = document.querySelector(".email-container");
+        const emailAddressElem = document.querySelector(".email-address");
+        const email = "azamefranco@gmail.com"
 
         emailButton.addEventListener("click", e => {
-            formElem.style.display = "flex";
-            formElem.addEventListener("click", e => {
+            emailContainerElem.style.display = "flex";
+            emailAddressElem.innerHTML = email;
+            
+            emailContainerElem.addEventListener("click", e => {
                 e.stopImmediatePropagation();
-                if(e.target.className == "form-container" || e.target.className.includes("close-form")){
-                    formElem.style.display = "none";
+                if(e.target.className == "email-container" || e.target.className.includes("close-email")){
+                    emailAddressElem.innerHTML = "";
+                    emailContainerElem.style.display = "none";
                     return true;
                 }
             });
