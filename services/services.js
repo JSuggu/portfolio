@@ -5,7 +5,7 @@ const elemSet = new Set([
     document.querySelector("body"), document.querySelector("main"), document.querySelector(".toggle-container"),
     document.querySelector(".toggle"), document.querySelector(".navbar-container"), document.querySelector(".container"), 
     document.querySelectorAll(".project-name"), document.querySelectorAll(".contact img"), document.querySelectorAll("span"), 
-    document.querySelectorAll("p"), document.querySelectorAll("a")
+    document.querySelectorAll("p"), document.querySelectorAll("a"), document.querySelector("#socketio")
 ]);
 
 export const services = {
