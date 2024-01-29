@@ -41,7 +41,7 @@ h1, h2, h3, h4{
 
 .subtitle {
     font-size: 24px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 /***** NAVBAR *****/
@@ -206,7 +206,7 @@ h1, h2, h3, h4{
 
 .email-address {
     display: flex;
-    width: 300px;
+    width: fit-content;
     flex-direction: column;
     background-color: rgb(230, 145, 30);
     border-radius: 5px;
@@ -223,6 +223,25 @@ h1, h2, h3, h4{
     color: rgb(245, 245, 245);
     cursor: pointer;
 }
+
+
+/*** ABOUT ME ***/
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 600px;
+    max-width: 100%;
+    margin-bottom: 100px;
+}
+
+.about-me p{
+    width: 80%;
+    align-self: center;
+}
+
+
 /*** PROJECTS ***/
 .projects-container {
     display: flex;
@@ -230,16 +249,15 @@ h1, h2, h3, h4{
     max-width: 100%;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .projects {
     display: grid;
-    width: 90%;
     justify-content: center;
     align-items: center;
     align-self: center;
-    grid-template-columns: repeat(3, minmax(190px, 30%));
+    grid-template-columns: repeat(2, max(40%));
     grid-template-rows: auto;
     column-gap: 15px; 
     row-gap: 20px;
@@ -295,6 +313,7 @@ h1, h2, h3, h4{
     display: flex;
     width: 100px;
     height: 25px;
+    padding: 5px;
     justify-content: center;
     align-items: center;
     background-color: rgb(230, 145, 30);
@@ -320,7 +339,6 @@ h1, h2, h3, h4{
 }
 
 .other-skills {
-    min-width: 600px;
     width: 80%;
     align-self: center;
     font-size: 16px;
@@ -330,19 +348,20 @@ h1, h2, h3, h4{
 
 .technologies {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    min-width: 900px;
+    grid-template-columns: repeat(4,minmax(100px, 1fr));
+    min-width: 600px;
     width: 70%;
     height: auto;
     column-gap: 20px;
     row-gap: 30px;
     margin: 0 auto;
+    align-self: center;
     justify-items: center;
 }
 
 .technologies img{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 }
 
 .languages {
@@ -387,6 +406,22 @@ span.light-mode, p.light-mode, a.light-mode, .project-name.light-mode {
     filter: invert(100%);
 }
 
+
+@media screen and (max-width: 800px){
+    
+    .technologies {
+        display: grid;
+        min-width: auto;
+        grid-template-columns: repeat(3,minmax(50px, 1fr));
+        width: 70%;
+    }
+
+    .technologies img{
+        width: 70px;
+        height: 70px;
+    }
+}
+
 /***** MEDIA QUERIES SMARTPHONES *****/
 @media screen and (max-width: 460px){
 
@@ -410,10 +445,10 @@ span.light-mode, p.light-mode, a.light-mode, .project-name.light-mode {
     }
 
     .menu span, .home-container p, .project-name , .skills h4 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
-    .card span, .card a {
+    .card span, .card a, .description p, .skills-container p {
         font-size: 14px;
     }
 
@@ -428,23 +463,30 @@ span.light-mode, p.light-mode, a.light-mode, .project-name.light-mode {
         padding-bottom: 100px;
     }
 
+    .home-container p {
+        width: 90%;
+    }
 
     .names {
         flex-wrap: wrap;
     }
 
     .names h1 {
-        font-size: 48px;
+        font-size: 42px;
     }
 
     .names h2 {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     /*** CONTACT ***/
     .contact {
         flex-direction: column;
         gap: 30px;
+    }
+
+    .contact a{
+        font-size: 16px;
     }
 
     .form-container {
@@ -480,6 +522,18 @@ span.light-mode, p.light-mode, a.light-mode, .project-name.light-mode {
         height: 120px;
     }
 
+    .about-me {
+        min-width: 300px;
+        max-width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .about-me p {
+        width: 90%;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
     /*** PROJECTS ***/
     .projects-container {
         min-width: 300px;
@@ -499,6 +553,7 @@ span.light-mode, p.light-mode, a.light-mode, .project-name.light-mode {
     }
 
     .description {
+        font-size: 16px;
         overflow: auto;
     }
 
@@ -521,18 +576,23 @@ span.light-mode, p.light-mode, a.light-mode, .project-name.light-mode {
     }
 
     .other-skills {
+        font-size: 16px;
         min-width: 240px;
-        width: 70%;
+        width: 90%;
     }
 
     .skills {
         min-width: 240px;
-        width: 60%;
+        width: 90%;
         column-gap: 5px;
         border: unset;
         grid-template-columns: 100%;
         grid-template-rows: repeat(3, auto);
         border: 1px solid rgb(100, 100, 100);
+    }
+
+    .technologies {
+        min-width: auto;
     }
 
     .frameworks {
