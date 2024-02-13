@@ -238,7 +238,9 @@ h1, h2, h3, h4{
 
 .about-me p{
     width: 80%;
+    font-size: 16px;
     align-self: center;
+    line-height: 1.5;
 }
 
 
@@ -341,8 +343,7 @@ h1, h2, h3, h4{
 .other-skills {
     width: 80%;
     align-self: center;
-    font-size: 16px;
-    line-height: 20px;
+    line-height: 1.5;
     margin-bottom: 20px;
 }
 

@@ -43,7 +43,7 @@ export const services = {
     contactRedirection: function() {
         const contactGroup = new Map([
             ["email", "azamefranco@gmail.com"],
-            ["linkedin", "https://www.linkedin.com/in/franco-benjamin-azame-32893b213/"],
+            ["linkedin", "https://www.linkedin.com/in/franco-azame"],
             ["github", "https://github.com/JSuggu"],
             ["instagram", "https://www.instagram.com/azame_franco/"]
         ]);
