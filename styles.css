@@ -7,7 +7,7 @@
 /***** GENERAL *****/
 body {
     display: flex;
-    width: 100vw;
+    width: 99vw;
     height: auto;
     justify-content: center;
     flex-direction: column;
@@ -237,7 +237,7 @@ h1, h2, h3, h4{
 }
 
 .about-me p{
-    width: 80%;
+    width: 90%;
     font-size: 16px;
     align-self: center;
     line-height: 1.5;
@@ -259,7 +259,7 @@ h1, h2, h3, h4{
     justify-content: center;
     align-items: center;
     align-self: center;
-    grid-template-columns: repeat(2, max(40%));
+    grid-template-columns: repeat(2, max(45%));
     grid-template-rows: auto;
     column-gap: 15px; 
     row-gap: 20px;
@@ -341,7 +341,7 @@ h1, h2, h3, h4{
 }
 
 .other-skills {
-    width: 80%;
+    width: 90%;
     align-self: center;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -351,7 +351,7 @@ h1, h2, h3, h4{
     display: grid;
     grid-template-columns: repeat(4,minmax(100px, 1fr));
     min-width: 600px;
-    width: 70%;
+    width: 90%;
     height: auto;
     column-gap: 20px;
     row-gap: 30px;
