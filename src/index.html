@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="shortcut icon" href="#">
+        <script type="module" src="./index.js"></script>
+        <link rel="stylesheet" href="./output.css">
+    </head>
+    <body class="flex w-full h-auto flex-col justify-center items-center bg-gray-900">
+        <main class="flex w-3/5 h-auto justify-center bg-gray-900">
+            <div class="flex flex-col min-w-768 max-w-full justify-center bg-gray-900">
+                <div class="flex flex-wrap flex-col justify-center items-center pt-52 pb-40">
+                    <section class="flex flex-col mb-8">
+                        <h1 class="text-8xl text-center">Azame Franco</h1>
+                        <h2 class="text-5xl text-center">Desarrollador Backend</h2>
+                    </section>
+                    <p class="flex w-4/6 justify-center items-center text-xl leading-5 mb-8">
+                        
+                    </p>
+                    <div class="flex justify-center items-center gap-8">
+                        <a class ="repository" href="https://github.com/JSuggu/portfolio" target="_blank">Repositorio</a>
+                        <a class ="curriculum" href="./assets/curriculum.pdf" target="_blank">Descargar CV</a>
+                        <section class="contact flex justify-center gap-5">
+                            <img src="./assets/invert-email.png" title="Email" id="email">
+                            <img src="./assets/invert-linkedin.png" title="LinkedIn" id="linkedin">
+                            <img src="./assets/invert-github.png" title ="GitHub" id="github">
+                        </section>
+                    </div>
+                    <div class="email-container hidden fixed top-0 left-0 right-0 bottom-0 justify-center items-center">
+                        <span class="email-address flex w-fit flex-col bg-orange-500 rounded-xl p-5 text-center text-2xl text-gray-900 self-center"></span>
+                        <a class="close-email text-xl mb-20 text-white cursor-pointer">X</a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col flex-wrap min-w-600 max-w-full mb-24">
+                    <h3 class="subtitle">Sobre Mi</h3>
+                    <p class="w-fit text-lg self-center leading-snug">
+                        Buenas, mi nombre es Franco soy de Buenos Aires y estudio programación desde hace 4 años a través de la universidad y de cursos.<br>
+                        Tengo experiencia desarrollando aplicaciones web, de escritorio y api's. Tambien manejo bases de datos relaciones 
+                        (diseño, normalización y consultas).<br>
+                        Los lenguajes de programación con los que suelo trabajar son Javascript y Java junto con algun framework y alguna libreria si es necesario, 
+                        aunque no tendria problema en desarrollar en otro lenguaje.<br>
+                        Ademas de programar también suelo pasar tiempo resolviendo ejercicios de lógica, practicando deportes o dibujando.
+                    </p>
+                </div>
+                <div class="w-fit flex-wrap flex-col mb-24">
+                    <h3 class="subtitle">Proyectos</h3>
+                    <div class="projects">
+                        <div class="card">
+                            <section class="image">
+                                <img src="./assets/clothing-store.jpg">
+                            </section>
+                            <section class="description">
+                                <h4 class="project-name">Tienda de Ropa</h4>
+                                <p>
+                                    Aplicación web para un E-commerce de ropa y calzados, con registros de usuarios y autorizaciones mediante token.
+                                </p>
+                                <div class="technologies-used">
+                                    <span>Css</span>
+                                    <span>JavaScript</span>
+                                    <span>Node</span>
+                                    <span>Express</span>
+                                    <span>Ejs</span>
+                                    <span>ExpressSession</span>
+                                    <span>Sequelize</span>
+                                    <span>PostgresSql</span>
+                                </div>
+                                <section class="page">
+                                    <a href="https://github.com/JSuggu/clothing-store-ssr" target="_blank">Repositorio</a>
+                                </section>
+                            </section>
+                        </div>
+                        <div class="card">
+                            <section class="image">
+                                <img src="./assets/resources-to-dev.jpg">
+                            </section>
+                            <section class="description">
+                                <h4 class="project-name">Recursos para Desarrolladores</h4>
+                                
+                                <p>
+                                    Una pagina web donde recopile algunos recursos que pueden llegar a ser utiles para los desarrolladores,
+                                    como apis, paginas para practicar logica, banco de imagenes o iconos para proyectos, entre otras cosas.
+                                </p>
+                                <div class="technologies-used">
+                                    <span>Html</span>
+                                    <span>Css</span>
+                                    <span>TypeScript</span>
+                                    <span>Angular</span>
+                                </div>
+                                <section class="page">
+                                    <a href="https://resources-to-developers.netlify.app" target="_blank">Web</a>
+                                    <a href="https://github.com/JSuggu/resources-to-developers" target="_blank">Repositorio</a>
+                                </section>
+                            </section>
+                        </div>
+                        <div class="card">
+                            <section class="image">
+                                <img src="./assets/futbol-field.jpg">
+                            </section>
+                            <section class="description">
+                                <h4 class="project-name">ApiRest Universidad</h4>
+                                <p>
+                                    ApiRest que tiene la finalidad de manejar las inscripciones de estudiantes a carreras universitarias
+                                    y a las materias. Cuenta con un manejo de sesiones para poder identificar a los usuarios y también
+                                    implementa autorización por token.
+                                </p>
+                                <div class="technologies-used">
+                                    <span>Java</span>
+                                    <span>Spring Boot</span>
+                                    <span>Spring Security</span>
+                                    <span>Jwt</span>
+                                    <span>PostgresSql</span>
+                                </div>
+                                <section class="page">
+                                    <a href="https://github.com/JSuggu/university-manager-api" target="_blank">Repositorio</a>
+                                </section>
+                            </section>
+                        </div>
+                        <div class="card">
+                            <section class="image">
+                                <img src="./assets/Image-not-found.png">
+                            </section>
+                            <section class="description">
+                                <h4 class="project-name">Gestor de Turnos</h4>
+                                <p>
+                                    Aplicación de escritorio para gestionar turnos (registro de pacientes, cancelacion de turnos, cambios, etc...) 
+                                    como los de una clínica médica.
+                                </p>
+                                <div class="technologies-used">
+                                    <span>Java</span>
+                                    <span>JavaFX</span>
+                                    <span>Hibernate</span>
+                                    <span>MySql</span>
+                                </div>
+                                <section class="page">
+                                    <a href="https://github.com/JSuggu/gestor-de-turnos" target="_blank">Repositorio</a>
+                                </section>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-container mb-24">
+                    <h3 class="subtitle">Habilidades y Tecnologias</h3>
+                    <p class="other-skills mb-5">
+                        Conocimientos y manejo de Testing unitario e integral, Desarrollo guiado por pruebas (TDD), Programación orientada a objetos (POO), 
+                        Programación funcional, Base de datos relacionales, Patrones de diseños, Patrón de arquitectura MVC, Diseño UML y Gestionado de versiones.
+                    </p>
+                    <section class="technologies">
+                        <img src="assets/html5.svg" alt="html" title="Html">
+                        <img src="assets/css3.svg" alt="css" title="Css">
+                        <img src="assets/js.svg" alt="js" title="Javascript">
+                        <img src="assets/angular.svg" alt="angular" title="Angular">
+                        <img src="assets/nodejs.svg" alt="node" title="Node">
+                        <img src="assets/sequelize.svg" alt="sequelize" title="Sequelize">
+                        <img src="assets/java.svg" alt="java" title="Java">
+                        <img src="assets/springboot.svg" alt="spring" title="Spring Boot">
+                        <img src="assets/sql.svg" alt="sql" title="Sql">
+                        <img src="assets/git.svg" alt="git" title="Git">                        
+                    </section>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
