@@ -2,9 +2,10 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwindDev": "npx -i ./src/input.css -o ./src/output.css --watch"
   },
   "keywords": [],
   "author": "",
