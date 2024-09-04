@@ -41,21 +41,22 @@ export const services = {
             return false;
         });
     },
-*/
+    */
     contactRedirection: function() {
         const contactGroup = new Map([
             ["email", "azamefranco@gmail.com"],
             ["linkedin", "https://www.linkedin.com/in/franco-azame"],
             ["github", "https://github.com/JSuggu"]
         ]);
-    
+        
         contactElem.addEventListener("click", e => { 
             const choice = contactGroup.get(e.target.id);
+
             if(choice.includes("@gmail")){
                 showEmail();
                 return;
             }
-    
+            
             if(typeof choice == "string"){
                 window.open(choice);
                 return true;
@@ -67,11 +68,23 @@ export const services = {
 }
 
 function showEmail() {
-    const emailButton = document.querySelector("#email");
     const emailContainerElem = document.querySelector(".email-container");
     const emailAddressElem = document.querySelector(".email-address");
     const email = "azamefranco@gmail.com"
 
+    emailContainerElem.style.display = "flex";
+    emailAddressElem.innerHTML = email;
+        
+    emailContainerElem.addEventListener("click", e => {
+        e.stopImmediatePropagation();
+        if(e.target.className == "email-container" || e.target.className.includes("close-email")){
+            emailAddressElem.innerHTML = "";
+            emailContainerElem.style.display = "none";
+            return true;
+        }
+    });
+    return true;
+        /*
     emailButton.addEventListener("click", e => {
         emailContainerElem.style.display = "flex";
         emailAddressElem.innerHTML = email;
@@ -86,4 +99,5 @@ function showEmail() {
         });
         return true;
     });
+    */
 }

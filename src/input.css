@@ -85,6 +85,7 @@ h1, h2, h3, h4{
     transform: scale(1.2,1.2);
 }
 
+
 /***** PROJECTS *****/
 .projects {
     display: flex;
@@ -196,8 +197,131 @@ h1, h2, h3, h4{
 }
 
 
-
 /***** MEDIA QUERIE *****/
-@media (max-width: 1024px) {
+
+@media (max-width: 600px) {
+    .main {
+        width: 90%;
+    }
+
+    /* PROJECTS */
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        column-gap: 15px; 
+        row-gap: 20px;
+    }
     
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 300px;
+        max-width: fit-content;
+        height: 600px;
+        border: 2px solid rgba(70, 160, 200, 0.5);
+        border-radius: 5px;
+        gap: 10px;
+    }
+
+    .image {
+        width: 350px;
+        height: 150px;
+    }
+    
+    .card img {
+        width: 350px;
+        height: 150px;
+    }
+    
+    .description {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        gap: 20px;
+        overflow-y: auto;
+        padding: 20px;
+    }
+    
+    .project-name {
+        font-size: 18px;
+        color: rgb(240, 240, 240);
+        text-align: left;
+    }
+
+    .card p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+    .technologies-used {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .technologies-used span{
+        display: flex;
+        height: 22px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(70, 160, 200);
+        border-radius: 5px 5px 5px 5px;
+        --tw-bg-opacity: 1;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .projects span {
+        font-size: 16px;
+    }
+    
+    .page {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .page a {
+        display: flex;
+        width: 100px;
+        height: 20px;
+        padding: 13px;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(230, 145, 30);
+        border-radius: 999px;
+        text-decoration: none;
+        transition: 0.2s;
+    }
+    
+    .page a:hover {
+        cursor: pointer;
+        transform: scale(1.1, 1.1);
+        background-color: rgb(230, 110, 20);
+    }
+    
+    /* SKILLS */
+    .technologies {
+        display: grid;
+        grid-template-columns: repeat(4,minmax(50px, 1fr));
+        min-width: 300px;
+        width: 90%;
+        height: auto;
+        column-gap: 20px;
+        row-gap: 30px;
+        margin: 0 auto;
+        align-self: center;
+        justify-items: center;
+        
+    }
+
+    .technologies img{
+        width: 50px;
+        height: 50px;
+    }
 }
