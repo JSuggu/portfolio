@@ -616,8 +616,8 @@ video {
   margin-bottom: 6rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
+.mb-40 {
+  margin-bottom: 10rem;
 }
 
 .mb-8 {
@@ -638,10 +638,6 @@ video {
 
 .w-3\/5 {
   width: 60%;
-}
-
-.w-4\/6 {
-  width: 66.666667%;
 }
 
 .w-fit {
@@ -677,6 +673,10 @@ video {
   justify-content: center;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
@@ -693,9 +693,9 @@ video {
   border-radius: 0.75rem;
 }
 
-.bg-gray-700 {
+.bg-gray-800 {
   --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
 .bg-orange-500 {
@@ -703,17 +703,8 @@ video {
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
 
-.bg-gray-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-
 .p-5 {
   padding: 1.25rem;
-}
-
-.pb-40 {
-  padding-bottom: 10rem;
 }
 
 .pt-52 {
@@ -739,37 +730,19 @@ video {
   line-height: 1;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
-.leading-5 {
-  line-height: 1.25rem;
-}
-
-.leading-snug {
-  line-height: 1.375;
-}
-
-.text-gray-700 {
+.text-gray-800 {
   --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-800 {
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 *{
@@ -781,6 +754,8 @@ video {
 span, p, a, label{
   font-family: Verdana, sans-serif;
   color: rgb(240, 240, 240);
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 a, label {
@@ -796,6 +771,24 @@ h1, h2, h3, h4{
 .subtitle {
   font-size: 24px;
   margin-bottom: 30px;
+}
+
+.skill {
+  height: 20px;
+}
+
+.technology, .knowledgement {
+  display: flex;
+  padding: 0px 5px;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(70, 160, 200);
+  border-radius: 5px 5px 5px 5px;
+  --tw-bg-opacity: 1;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /***** TOGGLE BUTTON *****/
@@ -835,7 +828,6 @@ h1, h2, h3, h4{
   justify-content: center;
   align-items: center;
   background-color: rgb(230, 145, 30);
-  font-size: 18px;
   text-decoration: none;
   border-radius: 100px;
   transition: 0.2s;
@@ -844,7 +836,6 @@ h1, h2, h3, h4{
 .curriculum:hover, .repository:hover {
   background-color: rgb(230, 110, 20);
   transform: scale(1.1,1.1);
-  font-weight: bold;
 }
 
 .contact img {
@@ -874,13 +865,13 @@ h1, h2, h3, h4{
   min-width: 600px;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  height: 300px;
+  height: 350px;
   border: 2px solid rgba(70, 160, 200, 0.5);
   border-radius: 5px;
   gap: 10px;
 }
 
-.projects img {
+.image img{
   height: 100%;
   aspect-ratio: 16/9;
   -o-object-fit: cover;
@@ -903,40 +894,20 @@ h1, h2, h3, h4{
   gap: 10px;
 }
 
-.technologies-used span{
-  display: flex;
-  height: 25px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(70, 160, 200);
-  border-radius: 5px 5px 5px 5px;
-  --tw-bg-opacity: 1;
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .project-name {
   font-size: 20px;
   color: rgb(240, 240, 240);
   text-align: left;
 }
 
-.projects span {
-  font-size: 16px;
-}
-
 .page {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .page a {
   display: flex;
-  width: 100px;
-  height: 25px;
-  padding: 15px;
+  width: 150px;
   justify-content: center;
   align-items: center;
   background-color: rgb(230, 145, 30);
@@ -965,11 +936,6 @@ h1, h2, h3, h4{
   margin: 0 auto;
   align-self: center;
   justify-items: center;
-}
-
-.technologies img{
-  width: 90px;
-  height: 90px;
 }
 
 /***** MEDIA QUERIE *****/
@@ -1006,12 +972,6 @@ h1, h2, h3, h4{
 
   .image {
     width: 350px;
-    height: 150px;
-  }
-
-  .card img {
-    width: 350px;
-    height: 150px;
   }
 
   .description {
@@ -1043,8 +1003,6 @@ h1, h2, h3, h4{
 
   .technologies-used span{
     display: flex;
-    height: 22px;
-    padding: 10px;
     justify-content: center;
     align-items: center;
     background-color: rgba(70, 160, 200);
@@ -1066,9 +1024,7 @@ h1, h2, h3, h4{
 
   .page a {
     display: flex;
-    width: 100px;
-    height: 20px;
-    padding: 13px;
+    width: 120px;
     justify-content: center;
     align-items: center;
     background-color: rgb(230, 145, 30);
@@ -1097,11 +1053,6 @@ h1, h2, h3, h4{
     margin: 0 auto;
     align-self: center;
     justify-items: center;
-  }
-
-  .technologies img{
-    width: 50px;
-    height: 50px;
   }
 
   .max-\[600px\]\:text-4xl {

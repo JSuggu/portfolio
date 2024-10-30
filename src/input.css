@@ -11,6 +11,8 @@
 span, p, a, label{
     font-family: Verdana, sans-serif;
     color: rgb(240, 240, 240);
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 a, label {
@@ -26,6 +28,24 @@ h1, h2, h3, h4{
 .subtitle {
     font-size: 24px;
     margin-bottom: 30px;
+}
+
+.skill {
+    height: 20px;
+}
+
+.technology, .knowledgement {
+    display: flex;
+    padding: 0px 5px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(70, 160, 200);
+    border-radius: 5px 5px 5px 5px;
+    --tw-bg-opacity: 1;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /***** TOGGLE BUTTON *****/
@@ -63,7 +83,6 @@ h1, h2, h3, h4{
     justify-content: center;
     align-items: center;
     background-color: rgb(230, 145, 30);
-    font-size: 18px;
     text-decoration: none;
     border-radius: 100px;
     transition: 0.2s;
@@ -72,7 +91,6 @@ h1, h2, h3, h4{
 .curriculum:hover, .repository:hover {
     background-color: rgb(230, 110, 20);
     transform: scale(1.1,1.1);
-    font-weight: bold;
 }
 
 .contact img {
@@ -100,13 +118,13 @@ h1, h2, h3, h4{
     display: flex;
     min-width: 600px;
     max-width: fit-content;
-    height: 300px;
+    height: 350px;
     border: 2px solid rgba(70, 160, 200, 0.5);
     border-radius: 5px;
     gap: 10px;
 }
 
-.projects img {
+.image img{
     height: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
@@ -128,40 +146,20 @@ h1, h2, h3, h4{
     gap: 10px;
 }
 
-.technologies-used span{
-    display: flex;
-    height: 25px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(70, 160, 200);
-    border-radius: 5px 5px 5px 5px;
-    --tw-bg-opacity: 1;
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .project-name {
     font-size: 20px;
     color: rgb(240, 240, 240);
     text-align: left;
 }
 
-.projects span {
-    font-size: 16px;
-}
-
 .page {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .page a {
     display: flex;
-    width: 100px;
-    height: 25px;
-    padding: 15px;
+    width: 150px;
     justify-content: center;
     align-items: center;
     background-color: rgb(230, 145, 30);
@@ -189,11 +187,6 @@ h1, h2, h3, h4{
     align-self: center;
     justify-items: center;
     
-}
-
-.technologies img{
-    width: 90px;
-    height: 90px;
 }
 
 
@@ -228,12 +221,6 @@ h1, h2, h3, h4{
 
     .image {
         width: 350px;
-        height: 150px;
-    }
-    
-    .card img {
-        width: 350px;
-        height: 150px;
     }
     
     .description {
@@ -265,8 +252,6 @@ h1, h2, h3, h4{
     
     .technologies-used span{
         display: flex;
-        height: 22px;
-        padding: 10px;
         justify-content: center;
         align-items: center;
         background-color: rgba(70, 160, 200);
@@ -288,9 +273,7 @@ h1, h2, h3, h4{
     
     .page a {
         display: flex;
-        width: 100px;
-        height: 20px;
-        padding: 13px;
+        width: 120px;
         justify-content: center;
         align-items: center;
         background-color: rgb(230, 145, 30);
@@ -318,10 +301,5 @@ h1, h2, h3, h4{
         align-self: center;
         justify-items: center;
         
-    }
-
-    .technologies img{
-        width: 50px;
-        height: 50px;
     }
 }

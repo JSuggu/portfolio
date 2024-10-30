@@ -84,20 +84,4 @@ function showEmail() {
         }
     });
     return true;
-        /*
-    emailButton.addEventListener("click", e => {
-        emailContainerElem.style.display = "flex";
-        emailAddressElem.innerHTML = email;
-        
-        emailContainerElem.addEventListener("click", e => {
-            e.stopImmediatePropagation();
-            if(e.target.className == "email-container" || e.target.className.includes("close-email")){
-                emailAddressElem.innerHTML = "";
-                emailContainerElem.style.display = "none";
-                return true;
-            }
-        });
-        return true;
-    });
-    */
 }
